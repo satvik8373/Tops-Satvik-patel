@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+        <script>
+          
+            //opps-object oriented programming system
+
+            class emp{
+                //default
+                constructor(){  //special member function
+                    //automatically called when object is created
+                    console.write("constructor called")
+                    this.name="john"
+                    //member variable
+                    this.age=30
+                }
+                //member function
+                display(){
+                    console.write("<br> display function called")
+                    document.write("<br>name is "+this.name)
+                    document.write("<br>age is "+this.age)
+                    
+                }
+
+            }
+            let a1 = new emp()
+            a1.display()
+        </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [10,20,30,40,50]
+        document.write('<br>type of is '+typeof(arr))
+        // map function- create a copy of array,doesn't change original array
+        // let res = arr.map(function(){})       
+        let res = arr.map((i,j)=>{
+                    return i*2
+                })
+        document.write('<br>Array is '+arr)
+        document.write('<br>Copy Array is '+res)
+        arr.forEach((i,index)=>{
+            // console.log(index); 
+            // console.log(i*2); 
+        })
+        // map - func foreach - loop
+        //returns array - doesnot return anything
+        arr = [10,20,30,10,40]
+        //always returns array
+        res= arr.filter((i)=> i==10)
+        // console.log(res);
+        //always return single value
+        res= arr.find((i)=> i==10)
+        // console.log(res);
+        //what is diff b/w filter-array,find-single value & includes-true-false
+        // reduce-reduceRight function        
+        let sum = arr.reduceRight((i,j)=>{ //i=10 j=20
+            console.log('i is '+i);
+            console.log('j is '+j);
+            return i+j //30
+        })
+        console.log('Addition is '+sum);       
+    </script>
+</body>
+</html>

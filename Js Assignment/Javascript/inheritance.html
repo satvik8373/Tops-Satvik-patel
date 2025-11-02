@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //polymorphism--one name-multiple form of a function
+        //inheritence--resablity
+        //meanning of super key word--too access parent class member or constructor or parent class
+
+        class abc{
+            constructor(){
+                this.a="john"
+                this.b=30
+                console.log("parent constructor called");
+            }
+            disp(){
+                document.write('<br> parent class called')
+                document.write('<br> name is '+(this.a + this.b))
+            }
+        }
+        class xyz extends abc{
+            constructor(){
+                super() //to call parent class constructor
+                console.log("child constructor called");
+            }
+            disp(){
+                super.disp() //to call parent class method
+                document.write('<br> child class called')
+
+            }
+        }
+        let x1 = new xyz()
+        x1.disp()
+        //x1.disp1()
+        //abstraction-data hiding
+        //encapsulation-wrapping up of data & function into single unit
+        //without object we cant use class
+
+    </script>
+</body>
+</html>

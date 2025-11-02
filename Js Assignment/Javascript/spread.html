@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = ["abc","xyz","sjg","erut"]
+        let arr2 = [10,20,30,40,50]
+        // ... spread operator & Merging
+        //by using spread operator we can merge multiple array
+        let merge_arr = [...arr,...arr2]
+        document.write('<br>'+merge_arr)
+        //Destructuring Array
+        // let [a,b,c,d,e,f,g,h,i] = merge_arr
+        // document.write('<br>A is '+a)
+        //...Rest operator -remaining elements 
+        let [a,b,c,d,...e] = merge_arr
+        document.write('<br>A is '+a)
+        document.write('<br>B is '+b)
+        document.write('<br>C is '+c)
+        //object destructuring
+        let obj = {
+            "name":"tesr",
+            "age":"25",
+            "salary":45000,
+            "lastname":"eruytur"
+        }
+        for(var x in obj){
+            document.write('<br>Key is '+obj[x])
+        }
+        let {name,salary} = obj
+        document.write('<br>Name is '+name)
+        document.write('<br>Salary is '+salary)
+    </script>
+</body>
+</html>

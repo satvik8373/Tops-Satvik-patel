@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const add = () => {
+            let a = 5
+            document.write('<br>Square is ' + (a ** 2))
+        }
+        add()
+        const mult = (a, b) => {
+            document.write('<br>Multiply  is ' + (a * b))
+        }
+        mult(35, 5)
+        
+        const pi = 3.14
+        let r = parseFloat(prompt("Enter radious:"))
+        let area = ()=> pi * r ** 2 //fat arrow function
+        let ans = area()
+        document.write('<br>Area of circle is ' + ans)
+        
+        let cube = a =>a * a * a
+        let p = parseInt(prompt("Enter p:"))
+        document.write('<br>cube is ' + cube(p))
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str = "hi hello how Hi are you hi?"
+        document.write('<br>length is '+str.length)
+        document.write('<br>uppercase is '+str.toUpperCase())
+        document.write('<br>lowercase is '+str.toLowerCase())
+        let str2 = str.substring(3,8)
+        document.write('<br>str 2 is '+str2)
+        str2 = str.substr(3,8)
+        document.write('<br>str 2 is '+str2)
+        // at a time single word replace - case sensitive
+        // str2 = str.replace('hI',"ABC")
+        //i-insensitive g-global(all word)
+        str2 = str.replace(/hI/ig,"ABC")
+        document.write('<br>str 2 is '+str2)
+        // replaceAll function
+        // at a time all word replace - case sensitive
+        str2 = str.replaceAll(/hi/ig,"ABC")
+        document.write('<br>replaceall - str 2 is '+str2)
+        //charAt chatCodeAt
+        document.write('<br>3rd position character is '+str.charAt(3))
+        document.write('<br>3rd position code character is '+str.charCodeAt(3))
+        // trim,trimStart & trimEnd
+        str2 = "       djskfh djfg  skjdfgskjd  ksdjf    "
+        document.write('<br>str2 is '+str2.length)
+        document.write('<br>str2 is '+str2.trim().length)
+        document.write('<br>str2 is '+str2.trimStart().length)
+        document.write('<br>str2 is '+str2.trimEnd().length)
+        
+        a=["abc","cvdf","gruty"]
+        b=[10,20,30]
+        let new_arr = a.concat(b,"jhkh","hjkhj")
+        document.write('<br>'+new_arr)
+        a = "314"
+        //amount == 6+1=7 
+        document.write('<br>'+a.padEnd(7,"Rs")) //RsR314
+        //padStart,padEnd
+        str = "hi hello abc xyzhsgf"
+        let ans = str.split(' ')
+        console.log(ans);
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="username" id="" value="abc">
+    <input type="text" name="username" id="" value="xyz">
+    <p class="abc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima cum illum placeat voluptatibus ipsa deleniti exercitationem saepe debitis ipsam in</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis fugit laboriosam quia saepe? Enim quidem magnam deserunt necessitatibus nesciunt eveniet qui veritatis repudiandae reprehenderit beatae, veniam quos molestias fugit corporis!</p>
+    <p class="abc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima cum illum placeat voluptatibus ipsa deleniti exercitationem saepe debitis ipsam in</p>
+    <p class="abc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima cum illum placeat voluptatibus ipsa deleniti exercitationem saepe debitis ipsam in</p>
+    <p class="abc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis fugit laboriosam quia saepe? Enim quidem magnam deserunt necessitatibus nesciunt eveniet qui veritatis repudiandae reprehenderit beatae, veniam quos molestias fugit corporis!</p>
+    <p class="abc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima cum illum placeat voluptatibus ipsa deleniti exercitationem saepe debitis ipsam in</p>
+    <!-- <div id="demo"></div> -->
+    <script>
+        // document object model
+        // document.getElementById('demo').innerHTML = "Hello"
+        // document.getElementById('demo').style.color = "yellow"
+        // document.getElementById('demo').style.backgroundColor = "green"
+        // document.getElementsByTagName('p').style.color = "red"
+        let a = document.getElementsByClassName("abc")
+        // document.getElementsByName
+        console.log(a);
+        // a[0].style.color = "blue"
+        // document.getElementsByTagName('p')[0].style.color = "blue"
+        for(let i=0;i<a.length;i++){
+            if((i+1)%2==0)
+                a[i].style.color = "green"
+            else 
+                a[i].style.color = "blue"
+        }
+    </script>
+</body>
+</html>

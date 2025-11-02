@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj = {
+            "name":"test",
+            "age":25,
+            "salary":56000,
+            "getData":function(){
+                return this.name+"---"+this.age
+            },
+            //getter method
+            get dispSal(){
+                return this.salary
+            },
+            //Setter method
+            set newSal(i){
+                this.salary = i
+            }
+        }
+        // for(var x in obj){
+        //     document.write('<br>'+x+' is '+obj[x])
+        // }
+        document.write('<br><hr>')
+        obj.lastname = "xyz" //insert
+        // document.write('<br>Name is '+obj['name'])
+        // document.write('<br>Age is '+obj.age)
+        // document.write('<br>Name & Age is '+obj.getData())
+        obj.age = 20 //update
+        delete obj.getData //delete
+        // for(var x in obj){
+        //     document.write('<br>'+x+' is '+obj[x])
+        // }
+        document.write('<br>Salary is '+obj.dispSal)
+        obj.newSal = 89000
+        document.write('<br>Salary is '+obj.dispSal)
+
+    </script>
+</body>
+</html>

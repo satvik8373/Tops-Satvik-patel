@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo">Hii...</div>
+    <span id="hours">00</span> :
+    <span id="min">00</span> :
+    <span id="snd">00</span>
+    <script>
+        // setTimeout
+        //setInterval
+        setTimeout(function(){
+            document.getElementById('demo').innerHTML = "HEllo"
+        },3000)
+        let count = 0
+        let min=1
+        setInterval(function(){
+            document.getElementById('snd').innerHTML = ++count
+
+            if(count>=10){
+                document.getElementById('min').innerHTML = min++
+                count=0
+            }
+            if(min>=10){
+                document.getElementById('hours').innerHTML = ++min
+                min=0
+            }
+        },1000)
+    </script>
+</body>
+</html>

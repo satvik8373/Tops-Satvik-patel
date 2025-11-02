@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // udf - user defined function
+        // 1)TNRN - take nothing return nothing
+        function add(){
+            let a=5
+            document.write('<br>Square is '+(a**2))
+        }
+        add()
+        //2)TSRN - take something return nothing
+        function mult(a,b){
+            document.write('<br>Multiply  is '+(a*b))
+        }
+        mult(35,5)
+        // 3)TNRS - take nothing return something
+        function area(){
+            const pi = 3.14
+            let r = parseFloat(prompt("Enter radious:"))
+            return pi*r**2
+        }
+        let ans = area()
+        document.write('<br>Area of circle is '+ans)
+        // document.write('<br>Area of circle is '+area())
+        // 4)TSRS - take something return something
+        function cube(a){
+            return a*a*a
+        }
+        let p = parseInt(prompt("Enter p:"))
+        document.write('<br>cube is '+cube(p))
+
+    </script>
+</body>
+</html>
