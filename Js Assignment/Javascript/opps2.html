@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+        <script>
+          
+            //opps-object oriented programming system
+            //default constructor and parameterized constructor
+          class user{
+            constructor(a,b){
+                this.name=a
+                this.age=b
+            }
+            display(){
+                document.write("<br>name is "+this.name)
+                document.write("<br>age is "+this.age)
+            }
+          }
+          let name = prompt("enter name")
+          let u1 = new user(name,22)
+
+          u1.display()
+        </script>
+</body>
+</html>

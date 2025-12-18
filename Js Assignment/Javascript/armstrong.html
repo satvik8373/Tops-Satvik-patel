@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let no = 1634
+        let sum=0
+        let n=no
+        //1^3 +  5^3 +  3^3=153
+        let dg = no.toString().length
+        while(no>0){
+            let r=no%10
+            sum = sum + (r**dg)
+            no = Math.floor(no/10)
+        }
+        document.write('<br>Number is '+n)
+        document.write('<br>Addition is '+sum)
+        if(n==sum){
+           document.write('<br>Armstrong no')
+        } else {
+           document.write('<br>Not Armstrong no')
+
+        }
+    </script>
+</body>
+</html>

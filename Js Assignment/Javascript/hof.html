@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const checkEven = (n)=>{
+                return n%2==0
+        }
+        const Hof = (func,a)=>{
+                let ans = func(a) //abc(10)
+                if(ans){
+                    document.write('<br>It is even no')
+                } else {
+                    document.write('<br>It is odd no')
+                }
+        }
+
+        Hof(checkEven,15)
+    </script>
+</body>
+</html>

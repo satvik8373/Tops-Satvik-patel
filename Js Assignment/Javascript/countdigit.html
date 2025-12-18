@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //count no of digits
+        //sum of digits 8+4+3
+        let no=843
+        let c=0
+        let sum=0
+        let m=1
+        while(no>0){ //843>0
+            let r=no%10 //843%10 = 3 84%10=4
+            no = Math.floor(no/10) //843/10 = 84.3 
+            c++
+            sum +=r //sum = sum+r
+            m *= r
+        }
+        document.write('<br>Counter is '+c)
+        document.write('<br>Sum of digits are '+sum)
+        document.write('<br>Multiply of digits are '+m)
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [10,20,30,40,50]
+        // document.write('<br> arr is '+arr[0])
+        // document.write('<br> arr is '+arr[2])
+        // for_in(object) loop & for_of (array) loop
+        // for(var x of arr){
+        //     document.write('<br>'+x)
+        // }
+        // document.write('<br><hr>')
+        // for(var x in arr){
+        //     document.write('<br>'+x+' element is '+arr[x])
+        // }
+        document.write('<br>Array is '+arr)
+        document.write('<br>length is '+arr.length)
+        arr.push(55,66,77)
+        document.write('<br>Array is '+arr)
+        arr.pop()
+        document.write('<br>Array is '+arr)
+        arr.unshift(11,22,33)
+        document.write('<br>Array is '+arr)
+        arr.shift()
+        document.write('<br>Array is '+arr)
+        arr.splice(2,0,100,200,300,400)
+        document.write('<br>Array is '+arr)
+        arr.splice(3,2)
+        document.write('<br>Array is '+arr)
+        let a = arr.slice(4)
+        document.write('<br>'+a)
+        a = arr.slice(4,8)
+        document.write('<br>'+a)
+        a = arr.slice(-4)
+        document.write('<br>'+a)
+        a = arr.slice(-6,-2)
+        document.write('<br>'+a)
+        arr = ["xyz","zydf","abc","jkl"]
+        document.write('<br>sorting is '+arr.sort())
+        document.write('<br>sorting is '+arr.reverse())
+        arr = [100,34,89,906,23,45,76,344]
+        //compare function
+        document.write('<br>sorting is '+arr.sort(function(a,b){
+                return b-a //100-34 =66 34-89 = -
+        }))
+        document.write('<br>sorting is '+arr.reverse())
+        arr1 = [44,55,66]
+        let merge_arr = arr.concat(arr1) //merge array
+        document.write('<br>'+merge_arr)
+        document.write('<br>'+arr.includes(76)) 
+       
+    </script>
+</body>
+</html>

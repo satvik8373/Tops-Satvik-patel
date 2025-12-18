@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let emp = {
+            "emp_id":101,
+            "emp_name":"ABcd",
+            "designation":"Manager",
+            get empDetail(){
+                return "Emp id is -- "+this.emp_id+" & position is "+this.designation
+            },
+            set empPosition(a){
+                this.designation = a
+            }
+
+        }
+        document.write('<br>'+emp.empDetail)
+        emp.empPosition = "Senior"
+        document.write('<br>'+emp.empDetail)
+        document.write('<br> POsition is -- '+emp.designation)
+
+        let users = [
+            {
+                "id":101,
+                "orders":[
+                    {
+                        pid:112,
+                        qty:2,
+                        payment_mode :['cod','card','credit','upi']
+                    }
+                ],
+                "Coupons":[
+                    {
+
+                    }
+                ]
+            }
+        ]
+    </script>
+</body>
+</html>

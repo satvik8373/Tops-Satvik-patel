@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="username" id="" value="abc">
+    <input type="text" name="username" id="" value="xyz">
+<br><br>
+<input type="checkbox" name="edu" id="" value="10">10th
+<input type="checkbox" name="edu" id="" value="12">12th
+<input type="checkbox" name="edu" id="" value="Bechlor">Bechlor
+<input type="checkbox" name="edu" id="" value="Master">Master
+    <script>
+        let a =document.getElementsByName('username')
+        console.log(a);
+        a[0].style.color = 'blue'
+        a[1].style.color = 'red'
+        a[0].value="TEST"
+        let b = document.getElementsByName('edu')
+        console.log(b);
+        for(var x in b){
+            if(x%2 == 0)
+                b[x].checked =true
+        }
+    </script>
+</body>
+</html>
